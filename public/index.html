@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Image Gallery</title>
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="shortcut icon"
+    href="images/favicon.ico"
+    type="image/x-icon">
+  </head>
+  <body>
+
+    <div class="content">
+
+      <div class="jumbotron jumbotron-fluid text-center mb-0">
+        <div class="container">
+          <h1 class="display-4">Inspiration for interior design</h1>
+          <p class="lead mt-4 mb-0">Log in to see photos.</p>
+        </div> <!--/.container-->
+      </div>  <!--/.jumbotron-->
+
+      <div class="container main-container">
+
+        <div id="sign-in-container" class="mx-auto">
+
+          <ul class="nav nav-tabs">
+            <li id="x" class="nav-item focus-link">
+              <a id="sign-in-link" class="nav-link disabled disabled-link" href="#sign-in">Sign in</a>
+            </li>
+            <li id="y" class="nav-item y">
+              <a id="register-link" class="nav-link" href="#register">Register</a>
+            </li>
+          </ul>
+
+          <!-- sign in form -->
+          <div id="sign-in" class="pt-5">
+            <form>
+              <div class="form-group pb-3">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+            </form>
+            <div class="row justify-content-center pt-3">
+              <button type="submit" id="sign-in-btn" class="btn mt-3"
+              onclick="window.location.href='dashboard.html'" value="submit-login-info">Log in</button>
+            </div>
+          </div>
+
+          <!-- registration form -->
+          <div id="register" class="pt-5">
+            <form>
+              <div class="form-group">
+                <label for="first-name">First name</label>
+                <input type="text" class="form-control" id="first-name" placeholder="Enter first name" autocomplete="nope">
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last name</label>
+                <input type="text" class="form-control" id="last-name" placeholder="Enter last name" autocomplete="nope">
+              </div>
+              <div class="form-group">
+                <label for="set-email">Email address</label>
+                <input type="email" class="form-control" id="set-email" placeholder="Enter email" autocomplete="nope">
+              </div>
+              <div class="form-group">
+                <label for="set-password">Password</label>
+                <input type="password" class="form-control" id="set-password" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password">
+              </div>
+            </form>
+            <div class="row justify-content-center pt-3">
+              <button type="submit" id="register-btn" class="btn mt-3"
+              onclick="window.location.href='dashboard.html'" value="submit-register-info">Register</button>
+            </div>
+          </div>
+
+       </div> <!--/#sign-in-container-->
+
+     </div> <!--/.main-container-->
+
+      <footer class="container-fluid pl-0 pr-0 text-center">
+        <span class="footer-copyright">©2019 Miia Laitinen</span>
+        <div class="mt-3">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      </footer>
+
+    </div> <!--/.content-->
+
+
+  <!--jquery, javascript-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  </body>
+</html>
